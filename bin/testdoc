@@ -1,0 +1,7 @@
+#!/bin/sh
+if [[ -p /dev/stdin ]]
+then
+  grep '#test' | sed 's/^[a-zA-Z]*#test: \([a-zA-Z]*\) /\1/'
+else
+  echo "USAGE: testrbl -v /path/to/testfile | testdoc"
+fi

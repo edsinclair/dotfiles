@@ -1,0 +1,37 @@
+[alias]
+  who = "!echo ; echo ; echo \"\\tworking as:\" ; echo \"\\t\\t   `git config user.name`\" ; echo \"\\t\\t   `git config user.email`\" ; echo ; echo"
+  what = "!git who ; git diff"
+  st = status
+  d = diff
+  ci = commit -v
+  cia = commit -v -a
+  co = checkout
+  cp = cherry-pick
+  l = log
+  ll = log -p
+  lt = log trunk..
+  llt = log -p trunk..
+  lm = log master..
+  llm = log -p master..
+  b = branch
+  rmb = !sh -c '(git branch -D $1 || test 1) && git push origin :$1' -
+  consume = !sh -c 'git merge $1 && git rmb $1' -
+[user]
+	name = Eirik Dentz Sinclair
+	email = eirikdentz@gmail.com
+[github]
+   user=edsinclair
+   token=cab8bf10f8af4c82a8f9f5e52c640e0b
+[git-pair]
+	authors = Eirik Dentz Sinclair <esinclair@zendesk.com>
+	email = pair@zendesk.com
+	authors = Michael Grosser <mgrosser@zendesk.com>
+[core]
+	editor = mvim --nofork
+	excludesfile = /Users/eirik/.gitignore
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[push]
+	default = current

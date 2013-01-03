@@ -1,0 +1,60 @@
+:set gcr=n-v-c:blinkon0
+:set autowrite
+:au FocusLost * silent! wa
+
+" Keybindings
+" -----------
+
+" kj - The intuitive way to get out of insert mode
+imap kj         <Esc>
+
+" Search
+nmap <leader>s  :%s/
+vmap <leader>s  :s/
+
+" Split screen
+map <leader>v   :vsp<CR>
+
+" Move between screens
+map <leader>w   ^Ww
+map <leader>=   ^W=
+map <leader>j   ^Wj
+map <leader>k   ^Wk
+nmap <C-j>      <C-w>j
+nmap <C-k>      <C-w>k
+nmap <C-h>      <C-w>h
+nmap <C-l>      <C-w>l
+
+" File tree browser
+map \           :NERDTreeToggle<CR>
+
+" File tree browser showing current file - pipe (shift-backslash)
+map \|          :NERDTreeFind<CR>
+
+" Open .vimrc file in new tab. Think Command + , [Preferences...] but with Shift.
+map <D-<>       :tabedit ~/.vimrc.after<CR>
+
+" Reload .vimrc
+map <leader>rv  :source ~/.vimrc.after<CR>
+
+" Undo/redo - Doesn't MacVim already have this?
+map <D-z>       :earlier 1<CR>
+map <D-Z>       :later 1<CR>
+
+" ctags with rails load path
+map <leader>t :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R public/javascripts<CR>
+map <leader>T :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
+
+" Ack current word
+map <leader>a :Ack<CR>
+
+" Auto-indent whole file
+nmap <leader>=  gg=G``
+map <silent> <F7> gg=G``:echo "Reformatted."<CR>
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>""
+
+if janus#is_plugin_enabled("ctrlp")
+  let g:ctrlp_arg_map = 0
+  map <D-e> :CtrlPBuffer<CR>
+endif
+
