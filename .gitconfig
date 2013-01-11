@@ -14,6 +14,7 @@
   lm = log master..
   llm = log -p master..
   b = branch
+  up = pull
   rmb = !sh -c '(git branch -D $1 || test 1) && git push origin :$1' -
   consume = !sh -c 'git merge $1 && git rmb $1' -
 [user]
@@ -26,12 +27,16 @@
 	authors = Eirik Dentz Sinclair <esinclair@zendesk.com>
 	email = pair@zendesk.com
 	authors = Michael Grosser <mgrosser@zendesk.com>
+[pager]
+  color = true
 [core]
 	editor = mvim --nofork
-	excludesfile = /Users/eirik/.gitignore
+	excludesfile = %{HOME}/.gitignore
 [color]
 	diff = auto
 	status = auto
 	branch = auto
 [push]
 	default = current
+[branch]
+  autosetuprebase = always # rebase when pulling
