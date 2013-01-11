@@ -3,6 +3,10 @@ pow_ruby_debug.rb
 /.DS_Store
 /.NERDTreeBookmarks
 /.Trash
+/.bash_history
+/.bash_logout
+/.bashrc
+/.profile
 /.cache
 /.dropbox
 /.gem
