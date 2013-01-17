@@ -8,6 +8,7 @@ pow_ruby_debug.rb
 /.bashrc
 /.profile
 /.cache
+/.cups
 /.dropbox
 /.gem
 /.guard_history
