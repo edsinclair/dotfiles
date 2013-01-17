@@ -58,3 +58,8 @@ if janus#is_plugin_enabled("ctrlp")
   map <D-e> :CtrlPBuffer<CR>
 endif
 
+if janus#is_plugin_enabled("vroom")
+  let g:vroom_test_unit_command = 'zeus testrb --no-use-color '
+  let g:vroom_use_bundle_exec = 0
+endif
+

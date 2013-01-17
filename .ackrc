@@ -1,5 +1,6 @@
 # lexically sort filenames
 --sort-files
+--ignore-dir=app/controllers/api/v2beta
 
 --type-add=ruby=rake,haml
 --type-add=vim=vimrc
