@@ -18,6 +18,7 @@
   rmb = !sh -c '(git branch -D $1 || test 1) && git push origin :$1' -
   parent-update = "!git fetch parent && git rebase parent/master"
   consume = !sh -c 'git merge $1 && git rmb $1' -
+  hco = "!~/bin/git-hub-commit"
 [user]
 	name = Eirik Dentz Sinclair
 	email = eirikdentz@gmail.com
