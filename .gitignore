@@ -21,6 +21,7 @@ pow_ruby_debug.rb
 /.rdebug_hist
 /.ssh
 /.tddium
+/.travis
 /.vim
 /.viminfo
 /.vimrc
