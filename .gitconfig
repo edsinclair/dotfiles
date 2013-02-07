@@ -33,7 +33,7 @@
   color = true
 [core]
 	editor = mvim --nofork
-	excludesfile = %{HOME}/.gitignore
+	excludesfile = /Users/esinclair/.globalignore
 [color]
 	diff = auto
 	status = auto

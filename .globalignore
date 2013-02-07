@@ -1,0 +1,9 @@
+pow_ruby_debug.rb
+/.DS_Store
+/.cache
+/.vagrant
+/tmp
+*.sqlite
+*.log
+/cache
+/pkg

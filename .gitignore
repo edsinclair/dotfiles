@@ -1,13 +1,12 @@
 pow_ruby_debug.rb
 /.CFUserTextEncoding
-/.DS_Store
 /.NERDTreeBookmarks
 /.Trash
 /.bash_history
 /.bash_logout
 /.bashrc
+/.berkshelf
 /.profile
-/.cache
 /.cups
 /.dropbox
 /.gem
@@ -19,6 +18,7 @@ pow_ruby_debug.rb
 /.rbenv
 /.rbfu
 /.rdebug_hist
+/.ruco
 /.ssh
 /.tddium
 /.travis
@@ -39,4 +39,5 @@ pow_ruby_debug.rb
 /Pictures/*
 /Ruby Screencasts
 /Public/*
+/VirtualBox VMs/*
 /github/*
