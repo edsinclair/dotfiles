@@ -6,7 +6,7 @@ pow_ruby_debug.rb
 /.bash_logout
 /.bashrc
 /.berkshelf
-/.profile
+/.chef
 /.cups
 /.dropbox
 /.gem
@@ -15,6 +15,7 @@ pow_ruby_debug.rb
 /.irb_history
 /.mysql_history
 /.oh-my-zsh
+/.profile
 /.rbenv
 /.rbfu
 /.rdebug_hist
