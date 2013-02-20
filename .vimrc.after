@@ -41,9 +41,13 @@ map <leader>rv  :source ~/.vimrc.after<CR>
 map <D-z>       :earlier 1<CR>
 map <D-Z>       :later 1<CR>
 
-" ctags with rails load path
-map <leader>t :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R public/javascripts<CR>
-map <leader>T :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
+" ctags with rails 2 load path
+map <leader>t :!script/runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R public/javascripts -f tags<CR>
+map <leader>T :!script/runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
+
+" ctags with rails 3 load path
+" map <leader>t :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R public/javascripts -f tags<CR>
+" map <leader>T :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
 
 " Ack current word
 map <leader>a :Ack<CR>
@@ -58,6 +62,8 @@ if janus#is_plugin_enabled("ctrlp")
   map <D-e> :CtrlPBuffer<CR>
 endif
 
+" <leader> r runs vroom on file
+" <leader> R runs vroom on nearest example
 if janus#is_plugin_enabled("vroom")
   let g:vroom_test_unit_command = 'zeus testrb --no-use-color '
   let g:vroom_use_bundle_exec = 0
