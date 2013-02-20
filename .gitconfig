@@ -1,5 +1,5 @@
 [alias]
-  who = "!echo ; echo ; echo \"\\tworking as:\" ; echo \"\\t\\t   `git config user.name`\" ; echo \"\\t\\t   `git config user.email`\" ; echo ; echo"
+  who = "!echo ; echo \"working as:\" ; echo \"\\t   `git config user.name`\" ; echo \"\\t   `git config user.email`\" ; echo"
   what = "!git who ; git diff"
   st = status
   d = diff
@@ -26,8 +26,8 @@
    user=edsinclair
    token=cab8bf10f8af4c82a8f9f5e52c640e0b
 [git-pair]
-	authors = Eirik Dentz Sinclair <edsinclair@zendesk.com>
 	email = pair@zendesk.com
+	authors = Eirik Dentz Sinclair <edsinclair@zendesk.com>
 	authors = Michael Grosser <mgrosser@zendesk.com>
 [pager]
   color = true
@@ -42,3 +42,5 @@
 	default = current
 [branch]
   autosetuprebase = always # rebase when pulling
+[format]
+  pretty = full
