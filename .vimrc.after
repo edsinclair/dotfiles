@@ -5,9 +5,6 @@
 " Keybindings
 " -----------
 
-" kj - The intuitive way to get out of insert mode
-imap kj         <Esc>
-
 " Search
 nmap <leader>s  :%s/
 vmap <leader>s  :s/
@@ -57,6 +54,12 @@ nmap <leader>=  gg=G``
 map <silent> <F7> gg=G``:echo "Reformatted."<CR>
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>""
 
+" Copy current buffer path relative to root of VIM session to system clipboard
+nnoremap <Leader>yp :let @*=expand("%")<cr>:echo "Copied file path to clipboard"<cr>
+
+" Copy current buffer path relative to root of VIM session to system clipboard
+nnoremap <Leader>ya :let @*=expand("%:p")<cr>:echo "Copied absolute file path to clipboard"<cr>
+
 if janus#is_plugin_enabled("ctrlp")
   let g:ctrlp_arg_map = 0
   map <D-e> :CtrlPBuffer<CR>
@@ -68,4 +71,3 @@ if janus#is_plugin_enabled("vroom")
   let g:vroom_test_unit_command = 'zeus testrb --no-use-color '
   let g:vroom_use_bundle_exec = 0
 endif
-
