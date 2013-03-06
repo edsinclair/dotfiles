@@ -26,7 +26,7 @@
    user=edsinclair
    token=cab8bf10f8af4c82a8f9f5e52c640e0b
 [git-pair]
-	email = pair@zendesk.com
+	email = @zendesk.com
 	authors = Eirik Dentz Sinclair <edsinclair@zendesk.com>
 	authors = Michael Grosser <mgrosser@zendesk.com>
 [pager]
@@ -43,4 +43,4 @@
 [branch]
   autosetuprebase = always # rebase when pulling
 [format]
-  pretty = full
+  pretty = fuller
