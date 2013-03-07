@@ -46,8 +46,11 @@ map <leader>T :!script/runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<
 " map <leader>t :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R public/javascripts -f tags<CR>
 " map <leader>T :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
 
+" Ag
+map <leader>a :Ag<CR>
+
 " Ack current word
-map <leader>a :Ack<CR>
+" map <leader>a :Ack<CR>
 
 " Auto-indent whole file
 nmap <leader>=  gg=G``
