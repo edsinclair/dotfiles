@@ -1,5 +1,6 @@
 :set gcr=n-v-c:blinkon0
 :set autowrite
+:set history=200
 :au FocusLost * silent! wa
 
 " Keybindings
@@ -39,14 +40,14 @@ map <D-z>       :earlier 1<CR>
 map <D-Z>       :later 1<CR>
 
 " ctags with rails 2 load path
-map <leader>t :!script/runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R public/javascripts -f tags<CR>
-map <leader>T :!script/runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
+map <leader>c :!script/runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R public/javascripts -f tags<CR>
+map <leader>C :!script/runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
 
 " ctags with rails 3 load path
-" map <leader>t :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R public/javascripts -f tags<CR>
-" map <leader>T :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
+" map <leader>c :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin/ctags -R public/javascripts -f tags<CR>
+" map <leader>C :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
 
-" Ag
+" Ag current word
 map <leader>a :Ag<CR>
 
 " Ack current word
