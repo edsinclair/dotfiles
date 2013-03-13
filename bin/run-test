@@ -1,0 +1,14 @@
+#!/bin/sh
+# Simple command pipe file creator, reader and executor
+# For more information and usage
+# See: http://destroyallsoftware.com/screencasts/catalog/running-tests-asynchronously
+
+# create the pipe
+if [ ! -p command_pipe ]; then
+  mkfifo command_pipe
+fi
+
+# read and execute contents
+while true; do
+  sh -c "$(cat command_pipe)"
+done
