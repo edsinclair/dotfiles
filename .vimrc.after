@@ -1,6 +1,6 @@
 :set gcr=n-v-c:blinkon0
 :set autowrite
-:set history=200
+:set history=100
 :au FocusLost * silent! wa
 
 " Keybindings

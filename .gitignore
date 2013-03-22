@@ -16,6 +16,8 @@ pow_ruby_debug.rb
 /.irb_history
 /.janus
 /.mysql_history
+/.node-gyp
+/.npm
 /.oh-my-zsh
 /.profile
 /.rbenv
