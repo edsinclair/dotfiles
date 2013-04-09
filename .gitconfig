@@ -30,6 +30,7 @@
 	authors = Eirik Dentz Sinclair <edsinclair@zendesk.com>
 	authors = Michael Grosser <mgrosser@zendesk.com>
 	authors = Ana Martinez <amartinez@zendesk.com>
+	authors = David Turner <dturner@palominodb.com>
 [pager]
   color = true
 [core]
