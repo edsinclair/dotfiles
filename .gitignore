@@ -15,7 +15,9 @@ pow_ruby_debug.rb
 /.gvimrc
 /.irb_history
 /.janus
+/.lein
 /.lesshst
+/.m2
 /.mysql_history
 /.node-gyp
 /.npm
