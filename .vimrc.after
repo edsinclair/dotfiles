@@ -65,7 +65,8 @@ nnoremap <Leader>yp :let @*=expand("%")<cr>:echo "Copied file path to clipboard"
 nnoremap <Leader>ya :let @*=expand("%:p")<cr>:echo "Copied absolute file path to clipboard"<cr>
 
 if janus#is_plugin_enabled("ctrlp")
-  let g:ctrlp_arg_map = 0
+  let g:ctrlp_arg_map   = 0
+  let g:ctrlp_max_files = 30000
   map <D-e> :CtrlPBuffer<CR>
 endif
 
