@@ -37,6 +37,7 @@ pow_ruby_debug.rb
 /.zcompdump
 /.zsh-update
 /.zsh_history
+/Applications/*
 /Desktop/*
 /Documents/*
 /Downloads/*
