@@ -15,6 +15,7 @@
   llm = log -p master..
   b = branch
   up = pull
+  pick-all = !sh -c 'git co staging && git cp $1 && git up && git push && git co production && git cp $1 && git up && git push && git co master && git b -D staging && git b -D production' -
   rmb = !sh -c '(git branch -D $1 || test 1) && git push origin :$1' -
   parent-update = "!git fetch parent && git rebase parent/master"
   consume = !sh -c 'git merge $1 && git rmb $1' -
