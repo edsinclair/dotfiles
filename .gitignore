@@ -11,6 +11,7 @@ pow_ruby_debug.rb
 /.cups
 /.dropbox
 /.gem
+/.gist-vim
 /.guard_history
 /.gvimrc
 /.irb_history
