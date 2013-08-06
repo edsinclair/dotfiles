@@ -10,6 +10,7 @@ pow_ruby_debug.rb
 /.chef.d
 /.cups
 /.dropbox
+/.exercism
 /.gem
 /.gist-vim
 /.guard_history
