@@ -25,6 +25,7 @@ pow_ruby_debug.rb
 /.npm
 /.oh-my-zsh
 /.profile
+/.ruby-version
 /.rbenv
 /.rbfu
 /.rdebug_hist
