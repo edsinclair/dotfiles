@@ -17,18 +17,22 @@ ZSH_THEME="edsinclair"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 # COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundler cap gem git github osx rails3 redis-cli ruby textmate terminalapp)
+plugins=(brew bundler cap gem git github osx rails3 redis-cli ruby terminalapp)
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+
+RUBIES=(~/.rbenv/versions/*)
+chruby 2.0.0-p247
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export NODE_PATH="/usr/local/lib/node_modules"
-

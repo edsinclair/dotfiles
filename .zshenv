@@ -1,5 +1,3 @@
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 eval "$(/Users/esinclair/github/zendesk/z/bin/z init -)"
 # Big app GC tuning
 export RUBY_HEAP_MIN_SLOTS=1000000
