@@ -6,6 +6,7 @@ pow_ruby_debug.rb
 /.bash_logout
 /.bashrc
 /.berkshelf
+/.cache
 /.chef
 /.chef.d
 /.cups
