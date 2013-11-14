@@ -29,7 +29,9 @@ pow_ruby_debug.rb
 /.ruby-version
 /.rbenv
 /.rbfu
+/.rbx
 /.rdebug_hist
+/.rubies
 /.ruco
 /.ssh
 /.tddium
@@ -54,3 +56,4 @@ pow_ruby_debug.rb
 /Public/*
 /VirtualBox VMs/*
 /github/*
+/src/*
