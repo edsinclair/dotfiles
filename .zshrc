@@ -25,11 +25,11 @@ DISABLE_AUTO_TITLE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(brew bundler cap gem git github osx rails3 redis-cli ruby terminalapp)
+
+# setup chruby and default to 2.0.0
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
-
-RUBIES=(~/.rbenv/versions/*)
-chruby 2.0.0-p247
+chruby 2.0.0
 
 source $ZSH/oh-my-zsh.sh
 
