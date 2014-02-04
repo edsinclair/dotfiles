@@ -1,5 +1,0 @@
-set bg=dark
-set background=dark
-colorscheme solarized
-set guifont=Monaco:h18
-set go-=T
