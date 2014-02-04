@@ -1,4 +1,3 @@
-eval "$(/Users/esinclair/github/zendesk/z/bin/z init -)"
 # Big app GC tuning
 export RUBY_HEAP_MIN_SLOTS=1000000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
