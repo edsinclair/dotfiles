@@ -36,3 +36,6 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export NODE_PATH="/usr/local/lib/node_modules"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
