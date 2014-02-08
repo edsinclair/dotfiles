@@ -17,7 +17,6 @@ pow_ruby_debug.rb
 /.gem
 /.gist-vim
 /.guard_history
-/.gvimrc
 /.heroku
 /.irb_history
 /.janus
@@ -46,7 +45,6 @@ pow_ruby_debug.rb
 /.vagrant.d
 /.vim
 /.viminfo
-/.vimrc
 /.zcompdump
 /.zsh-update
 /.zsh_history
