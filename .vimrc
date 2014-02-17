@@ -110,17 +110,11 @@ nmap <C-k>      <C-w>k
 nmap <C-h>      <C-w>h
 nmap <C-l>      <C-w>l
 
-" File tree browser
-map \           :NERDTreeToggle<CR>
-
-" File tree browser showing current file - pipe (shift-backslash)
-map \|          :NERDTreeFind<CR>
-
 " Open .vimrc file in new tab. Think Command + , [Preferences...] but with Shift.
-map <D-<>       :tabedit ~/.vimrc.after<CR>
+map <D-<>       :tabedit ~/.vimrc<CR>
 
 " Reload .vimrc
-map <leader>rv  :source ~/.vimrc.after<CR>
+map <leader>rv  :source ~/.vimrc<CR>
 
 " Undo/redo - Doesn't MacVim already have this?
 map <D-z>       :earlier 1<CR>
@@ -150,10 +144,6 @@ nnoremap <Leader>yp :let @*=expand("%")<cr>:echo "Copied file path to clipboard"
 
 " Copy current buffer path relative to root of VIM session to system clipboard
 nnoremap <Leader>ya :let @*=expand("%:p")<cr>:echo "Copied absolute file path to clipboard"<cr>
-
-let g:ctrlp_arg_map   = 0
-let g:ctrlp_max_files = 30000
-map <D-e> :CtrlPBuffer<CR>
 
 " <leader> r runs vroom on file
 " <leader> R runs vroom on nearest example
@@ -326,3 +316,23 @@ cnoremap <expr> <C-P> getcmdline()[getcmdpos()-2] ==# ' ' ? expand('%:p:h') : "\
 
 " Kills Trailing Whitespaces
 command! KillWhitespace :normal :%s/ *$//g<cr><c-o><cr>
+
+" File tree browser
+map \           :NERDTreeToggle<CR>
+
+" File tree browser showing current file - pipe (shift-backslash)
+map \|          :NERDTreeFind<CR>
+
+" NERDCommenter mappings
+if has("gui_macvim") && has("gui_running")
+  map  <D-/> :NERDCommenterToggle<CR>
+  imap <D-/> <Esc>:NERDCommenterToggle<CR>i
+else
+  map <leader>/ :NERDCommenterToggle<CR>
+endif
+
+" CtrlP mappings
+"
+let g:ctrlp_arg_map   = 0
+let g:ctrlp_max_files = 30000
+map <D-e> :CtrlPBuffer<CR>
