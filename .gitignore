@@ -28,9 +28,11 @@ pow_ruby_debug.rb
 /.npm
 /.netrc
 /.oh-my-zsh
+/.pip/*
 /.profile
 /.pry_history
 /.psql_history
+/.pypirc
 /.rbenv
 /.rbfu
 /.rbx
