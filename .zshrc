@@ -29,7 +29,6 @@ plugins=(brew bundler cap gem git github osx rails3 redis-cli ruby terminalapp)
 # setup chruby and default to 2.0.0
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
-chruby 2.0.0
 
 source $ZSH/oh-my-zsh.sh
 
