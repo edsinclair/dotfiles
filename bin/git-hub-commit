@@ -2,8 +2,8 @@
 remotes = `git remote -v`.split("\n")
 remote = remotes.detect { |l| l.start_with?("origin\t") }
 url = remote.split(" ")[1]
-repo = url[%r{(\w+/\w+)\.git}i, 1]
-branch = `git rev-parse --abbrev-ref HEAD`.strip
+repo = url[%r{([\w\-]+/[\w\-]+)\.git}i, 1]
+#branch = `git rev-parse --abbrev-ref HEAD`.strip
 commit = ARGV.last
 
 url_to_open = "https://github.com/#{repo}/commit/#{commit}"
