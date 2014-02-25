@@ -32,6 +32,7 @@ pow_ruby_debug.rb
 /.profile
 /.pry_history
 /.psql_history
+/.pylint.d
 /.pypirc
 /.rbenv
 /.rbfu
