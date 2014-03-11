@@ -10,7 +10,9 @@ pow_ruby_debug.rb
 /.chef
 /.chef.d
 /.cocoapods
+/.config
 /.cups
+/.dbshell
 /.dropbox
 /.dropbox-master
 /.exercism
@@ -23,6 +25,7 @@ pow_ruby_debug.rb
 /.lein
 /.lesshst
 /.m2
+/.mongorc.js
 /.mysql_history
 /.node-gyp
 /.npm
