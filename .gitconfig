@@ -27,8 +27,7 @@
    user=edsinclair
    token=cab8bf10f8af4c82a8f9f5e52c640e0b
 [git-pair]
-	email = @blinkbuggy.com
-	authors = Eirik Dentz Sinclair <edsinclair@zendesk.com>
+	email = @essess.com
 	authors = Michael Grosser <mgrosser@zendesk.com>
 	authors = Ana Martinez <amartinez@zendesk.com>
 	authors = David Turner <dturner@palominodb.com>
@@ -36,6 +35,7 @@
 	authors = Igor Justino <igor@zendesk.com>
 	authors = Victor Kmita <vkmita@zendesk.com>
 	authors = prudhvi dhulipalla <pchaitanya@zendesk.com>
+	authors = Eirik Dentz Sinclair <eirik@essess.com>
 [pager]
   color = true
 [core]
