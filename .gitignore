@@ -13,6 +13,7 @@ pow_ruby_debug.rb
 /.config
 /.cups
 /.dbshell
+/.docker-osx
 /.dropbox
 /.dropbox-master
 /.exercism
