@@ -26,15 +26,16 @@ DISABLE_AUTO_TITLE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(brew bundler cap gem git github osx rails3 redis-cli ruby terminalapp)
 
-# setup chruby and default to 2.0.0
+# Version managers
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
+source $(brew --prefix nvm)/nvm.sh
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
-export NODE_PATH="/usr/local/lib/node_modules"
+export NODE_PATH="${NVM_PATH}_modules"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
