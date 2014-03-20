@@ -30,6 +30,7 @@ pow_ruby_debug.rb
 /.mysql_history
 /.node-gyp
 /.npm
+/.nx
 /.netrc
 /.oh-my-zsh
 /.pip/*
@@ -38,6 +39,7 @@ pow_ruby_debug.rb
 /.psql_history
 /.pylint.d
 /.pypirc
+/.qt
 /.rbenv
 /.rbfu
 /.rbx
