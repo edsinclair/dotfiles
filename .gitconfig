@@ -36,11 +36,12 @@
 	authors = Victor Kmita <vkmita@zendesk.com>
 	authors = prudhvi dhulipalla <pchaitanya@zendesk.com>
 	authors = Eirik Dentz Sinclair <eirik@essess.com>
+	authors = Jonathan Lefman <jonathan.lefman@essess.com>
 [pager]
   color = true
 [core]
 	editor = mvim --nofork
-	excludesfile = /Users/esinclair/.globalignore
+	excludesfile = ~/.globalignore
 [color]
 	diff = auto
 	status = auto
