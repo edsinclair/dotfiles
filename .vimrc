@@ -139,8 +139,11 @@ map <D-Z>       :later 1<CR>
 "map <leader>C :!script/runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
 
 " ctags with rails 3 load path
-map <leader>c :!rails runner 'puts $LOAD_PATH.reject { \|p\| p.include?("gems/2.0.0/gems/json") \|\| p.include?("2.0.0/gems/rails-3.2.16") }.join(" ")' \| xargs /usr/local/bin/ctags -R public/javascripts -f tags<CR>
-map <leader>C :!rails runner 'puts $LOAD_PATH.reject { \|p\| p.include?("gems/2.0.0/gems/json") \|\| p.include?("2.0.0/gems/rails-3.2.16") }.join(" ")' \| xargs rdoc -f tags<CR>
+"map <leader>c :!rails runner 'puts $LOAD_PATH.reject { \|p\| p.include?("gems/2.0.0/gems/json") \|\| p.include?("2.0.0/gems/rails-3.2.16") }.join(" ")' \| xargs /usr/local/bin/ctags -R public/javascripts -f tags<CR>
+"map <leader>C :!rails runner 'puts $LOAD_PATH.reject { \|p\| p.include?("gems/2.0.0/gems/json") \|\| p.include?("2.0.0/gems/rails-3.2.16") }.join(" ")' \| xargs rdoc -f tags<CR>
+
+" ctags
+map <leader>c :!/usr/local/bin/ctags -R -f tags<CR>
 
 " Ag current word
 map <leader>a :Ag<CR>
