@@ -3,6 +3,7 @@ pow_ruby_debug.rb
 /.cache
 /.vagrant
 /tmp
+tags
 *.sqlite
 *.log
 /cache
