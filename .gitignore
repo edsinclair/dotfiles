@@ -21,6 +21,8 @@ pow_ruby_debug.rb
 /.gist-vim
 /.guard_history
 /.heroku
+# For now....
+/.ipython
 /.irb_history
 /.janus
 /.lein
@@ -69,5 +71,6 @@ pow_ruby_debug.rb
 /Ruby Screencasts
 /Public/*
 /VirtualBox VMs/*
+/.virtualenvs
 /github/*
 /src/*

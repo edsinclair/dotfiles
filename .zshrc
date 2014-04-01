@@ -37,5 +37,11 @@ source $ZSH/oh-my-zsh.sh
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export NODE_PATH="${NVM_PATH}_modules"
 
+# Sandbox managers
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/github/essessinc
+source /usr/local/bin/virtualenvwrapper.sh
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
