@@ -270,6 +270,10 @@ if has("gui_macvim") && has("gui_running")
   imap <D-8> <Esc>8gt
   map  <D-9> 9gt
   imap <D-9> <Esc>9gt
+
+  map  <D-e> :CtrlPBuffer<CR>
+  map  <D-/> :NERDCommenterToggle<CR>
+  imap <D-/> <Esc>:NERDCommenterToggle<CR>i
 else
   " Map command-[ and command-] to indenting or outdenting
   " while keeping the original selection in visual mode
@@ -322,6 +326,9 @@ else
   imap <C-8> <Esc>8gt
   map  <C-9> 9gt
   imap <C-9> <Esc>9gt
+
+  map  <leader>e :CtrlPBuffer<CR>
+  map <leader>/ :NERDCommenterToggle<CR>
 endif
 
 ""
@@ -340,16 +347,7 @@ map \           :NERDTreeToggle<CR>
 " File tree browser showing current file - pipe (shift-backslash)
 map \|          :NERDTreeFind<CR>
 
-" NERDCommenter mappings
-if has("gui_macvim") && has("gui_running")
-  map  <D-/> :NERDCommenterToggle<CR>
-  imap <D-/> <Esc>:NERDCommenterToggle<CR>i
-else
-  map <leader>/ :NERDCommenterToggle<CR>
-endif
-
-" CtrlP mappings
+" CtrlP settings
 "
 let g:ctrlp_arg_map   = 0
 let g:ctrlp_max_files = 30000
-map <D-e> :CtrlPBuffer<CR>
