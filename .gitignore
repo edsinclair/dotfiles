@@ -17,8 +17,10 @@ pow_ruby_debug.rb
 /.docker-osx
 /.dropbox
 /.dropbox-master
+/.dvm
 /.exercism
 /.gem
+/.gnupg
 /.gist-vim
 /.guard_history
 /.heroku
