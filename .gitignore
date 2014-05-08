@@ -74,6 +74,7 @@ pow_ruby_debug.rb
 /Ruby Screencasts
 /Public/*
 /VirtualBox VMs/*
+/VMware VMs/*
 /.virtualenvs
 /bin/BrowserStackLocal
 /github/*
