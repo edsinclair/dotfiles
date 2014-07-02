@@ -1,5 +1,6 @@
 let mapleader = ","
 let maplocalleader = ";"
+set shell=/bin/bash
 
 set nocompatible      " Use vim, no vi defaults
 set number            " Show line numbers
