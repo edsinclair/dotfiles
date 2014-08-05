@@ -9,6 +9,7 @@ pow_ruby_debug.rb
 /.berkshelf
 /.cache
 /.chef
+/.chefdk
 /.chef.d
 /.cocoapods
 /.config
@@ -32,6 +33,7 @@ pow_ruby_debug.rb
 /.lein
 /.lesshst
 /.m2
+/.matplotlib
 /.mongorc.js
 /.mysql_history
 /.node-gyp
