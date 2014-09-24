@@ -29,6 +29,7 @@ plugins=(brew bundler cap gem git github osx rails3 redis-cli ruby terminalapp)
 # Version managers
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
+export NVM_DIR=/Users/eirik/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
 source $ZSH/oh-my-zsh.sh

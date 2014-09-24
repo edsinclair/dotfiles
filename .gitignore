@@ -2,6 +2,7 @@ pow_ruby_debug.rb
 /.CFUserTextEncoding
 /.NERDTreeBookmarks
 /.Trash
+/.atom
 /.aws
 /.bash_history
 /.bash_logout
@@ -40,6 +41,7 @@ pow_ruby_debug.rb
 /.npm
 /.nx
 /.netrc
+/.nvm
 /.oh-my-zsh
 /.pip/*
 /.profile
