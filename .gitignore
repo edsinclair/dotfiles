@@ -8,6 +8,8 @@ pow_ruby_debug.rb
 /.bash_logout
 /.bashrc
 /.berkshelf
+/.boot2docker
+/.byebug_hist
 /.cache
 /.chef
 /.chefdk
