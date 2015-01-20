@@ -49,8 +49,10 @@ pow_ruby_debug.rb
 /.profile
 /.pry_history
 /.psql_history
+/.pt
 /.pylint.d
 /.pypirc
+/.qgis2
 /.qt
 /.rbenv
 /.rbfu
@@ -74,6 +76,7 @@ pow_ruby_debug.rb
 /Documents/*
 /Downloads/*
 /Dropbox/*
+/Google\ Drive/*
 /Library/*
 /Movies/*
 /Music/*
