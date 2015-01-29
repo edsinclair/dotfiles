@@ -68,7 +68,7 @@ pow_ruby_debug.rb
 /.vagrant.d
 /.vim
 /.viminfo
-/.zcompdump
+/.zcompdump*
 /.zsh-update
 /.zsh_history
 /Applications/*
