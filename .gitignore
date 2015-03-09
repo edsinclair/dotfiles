@@ -25,6 +25,7 @@ pow_ruby_debug.rb
 /.dvdcss
 /.exercism
 /.gem
+/Gemfile.lock
 /.gnupg
 /.gist-vim
 /.guard_history
