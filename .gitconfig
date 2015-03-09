@@ -40,6 +40,7 @@
 	authors = Dustin Collins <dustin.collins@essess.com>
 	authors = Alex Makkaveyev <alex.makkaveyev@essess.com>
 	authors = Matt Barry <matt.barry@essess.com>
+	authors = Josh Schrade <josh.schrade@essess.com>
 [pager]
   color = true
 [core]
@@ -55,3 +56,5 @@
   autosetuprebase = always # rebase when pulling
 [format]
   pretty = fuller
+[hub]
+	protocol = ssh
