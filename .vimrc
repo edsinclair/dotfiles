@@ -1,3 +1,9 @@
+"gq{motion} % format the line that {motion} moves over
+"{Visual}gq % format the visually selected area
+"gqq        % format the current line
+"...
+":set tw=80
+
 let mapleader = ","
 let maplocalleader = ";"
 set shell=/bin/bash
