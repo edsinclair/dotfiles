@@ -35,6 +35,7 @@ source $(brew --prefix nvm)/nvm.sh
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+source /usr/local/share/zsh/site-functions/*
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export NODE_PATH="${NVM_PATH}_modules"
 source $HOME/.pip/env.sh
