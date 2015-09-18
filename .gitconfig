@@ -23,24 +23,8 @@
 [user]
 	name = Eirik Dentz Sinclair
 	email = eirikdentz@gmail.com
-[github]
-   user=edsinclair
-   token=cab8bf10f8af4c82a8f9f5e52c640e0b
 [git-pair]
 	email = @essess.com
-	authors = Michael Grosser <mgrosser@zendesk.com>
-	authors = David Turner <dturner@palominodb.com>
-	authors = Jonathan Cheatham <jcheatham@zendesk.com>
-	authors = Igor Justino <igor@zendesk.com>
-	authors = Victor Kmita <vkmita@zendesk.com>
-	authors = prudhvi dhulipalla <pchaitanya@zendesk.com>
-	authors = Eirik Dentz Sinclair <eirik@essess.com>
-	authors = Jonathan Lefman <jonathan.lefman@essess.com>
-	authors = Jonathan Jesneck <jonathan.jesneck@essess.com>
-	authors = Dustin Collins <dustin.collins@essess.com>
-	authors = Alex Makkaveyev <alex.makkaveyev@essess.com>
-	authors = Matt Barry <matt.barry@essess.com>
-	authors = Josh Schrade <josh.schrade@essess.com>
 [pager]
   color = true
 [core]
