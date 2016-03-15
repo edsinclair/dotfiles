@@ -31,6 +31,7 @@ pow_ruby_debug.rb
 /.gist-vim
 /.guard_history
 /.heroku
+/.hex
 # For now....
 /.ipython
 /.irb_history
@@ -39,6 +40,7 @@ pow_ruby_debug.rb
 /.lesshst
 /.m2
 /.matplotlib
+/.mix
 /.mongorc.js
 /.mysql_history
 /.node-gyp

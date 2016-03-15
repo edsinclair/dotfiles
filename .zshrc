@@ -38,7 +38,6 @@ source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh/site-functions/*
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export NODE_PATH="${NVM_PATH}_modules"
-source $HOME/.pip/env.sh
 
 # Sandbox managers
 
