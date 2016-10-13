@@ -25,6 +25,7 @@
 	email = eirikdentz@gmail.com
 [git-pair]
 	email = @essess.com
+	authors = Eirik Dentz Sinclair <eirik@essess.com>
 [pager]
   color = true
 [core]
@@ -42,3 +43,5 @@
   pretty = fuller
 [hub]
 	protocol = ssh
+[diff]
+	compactionHeuristic = true

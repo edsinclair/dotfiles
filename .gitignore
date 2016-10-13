@@ -9,6 +9,7 @@ pow_ruby_debug.rb
 /.bashrc
 /.berkshelf
 /.boot2docker
+/.bundle
 /.byebug_hist
 /.cache
 /.chef
@@ -50,6 +51,7 @@ pow_ruby_debug.rb
 /.nvm
 /.oh-my-zsh
 /.pip/*
+/.postgresql
 /.profile
 /.pry_history
 /.psql_history
@@ -67,6 +69,7 @@ pow_ruby_debug.rb
 /.ruby-version
 /.ruco
 /.ssh
+/.subversion
 /.tddium
 /.travis
 /.vagrant.d

@@ -24,7 +24,7 @@ DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundler cap gem git github osx rails redis-cli ruby terminalapp)
+plugins=(brew bundler cap docker gem git github osx rails redis-cli ruby terminalapp)
 
 # Version managers
 source /usr/local/opt/chruby/share/chruby/chruby.sh
