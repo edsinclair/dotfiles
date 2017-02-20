@@ -73,6 +73,7 @@ pow_ruby_debug.rb
 /.subversion
 /.tddium
 /.travis
+/.trc
 /.vagrant.d
 /.vim
 /.viminfo
