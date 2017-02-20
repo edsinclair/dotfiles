@@ -12,6 +12,8 @@ set nocompatible      " Use vim, no vi defaults
 set number            " Show line numbers
 set ruler             " Show line and column number
 syntax enable         " Turn on syntax highlighting allowing local overrides
+set background=dark
+colorscheme znake
 set encoding=utf-8    " Set default encoding to UTF-8
 
 :au FocusLost * silent! wa
@@ -105,8 +107,8 @@ if has("autocmd")
   " make Python follow PEP8 for whitespace ( http://www.python.org/dev/peps/pep-0008/ )
   au FileType python setlocal softtabstop=4 tabstop=4 shiftwidth=4
 
-  " use same whitespace for javascript files
-  au FileType javascript setlocal softtabstop=4 tabstop=4 shiftwidth=4
+  " use 2 for javascript files
+  au FileType javascript setlocal softtabstop=2 tabstop=2 shiftwidth=2
 
   " Remember last location in file, but not for commit messages.
   " see :help last-position-jump
@@ -174,9 +176,6 @@ nnoremap <Leader>ya :let @*=expand("%:p")<cr>:echo "Copied absolute file path to
 
 " <leader> r runs vroom on file
 " <leader> R runs vroom on nearest example
-let g:vroom_test_unit_command = 'zeus testrb --no-use-color '
-let g:vroom_use_bundle_exec = 0
-
 let jshint2_save = 1
 ""
 "" General Mappings (Normal, Visual, Operator-pending)
