@@ -26,6 +26,9 @@ DISABLE_AUTO_TITLE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(brew bundler cap docker gem git github osx rails redis-cli ruby terminalapp)
 
+# editor
+EDITOR=vim
+
 # Version managers
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
