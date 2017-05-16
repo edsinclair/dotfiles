@@ -12,6 +12,7 @@ pow_ruby_debug.rb
 /.bundle
 /.byebug_hist
 /.cache
+/.cargo
 /.chef
 /.chefdk
 /.chef.d
@@ -36,6 +37,7 @@ pow_ruby_debug.rb
 # For now....
 /.ipython
 /.irb_history
+/.ivy2
 /.janus
 /.lein
 /.lesshst
@@ -43,13 +45,16 @@ pow_ruby_debug.rb
 /.matplotlib
 /.mix
 /.mongorc.js
+/.multirust
 /.mysql_history
 /.node-gyp
+/.now
 /.npm
 /.nx
 /.netrc
 /.nvm
 /.oh-my-zsh
+/.oracle_jre_usage
 /.packer.d
 /.pip/*
 /.postgresql
@@ -69,6 +74,9 @@ pow_ruby_debug.rb
 /.rubies
 /.ruby-version
 /.ruco
+/.rustup
+/.sbt
+/.scala_history
 /.ssh
 /.subversion
 /.tddium
@@ -78,6 +86,7 @@ pow_ruby_debug.rb
 /.vim
 /.viminfo
 /.wget-hsts
+/.yarnrc
 /.zcompdump*
 /.zsh-update
 /.zsh_history
@@ -91,8 +100,9 @@ pow_ruby_debug.rb
 /Movies/*
 /Music/*
 /Pictures/*
-/Ruby Screencasts
 /Public/*
+/Ruby Screencasts
+/Software
 /VirtualBox VMs/*
 /VMware VMs/*
 /.virtualenvs

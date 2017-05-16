@@ -32,15 +32,12 @@ EDITOR=vim
 # Version managers
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
-export NVM_DIR="$HOME/.nvm"
-source $(brew --prefix nvm)/nvm.sh
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 source /usr/local/share/zsh/site-functions/*
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
-export NODE_PATH="${NVM_PATH}_modules"
 
 # Sandbox managers
 
