@@ -18,6 +18,7 @@ pow_ruby_debug.rb
 /.chef.d
 /.cocoapods
 /.config
+/.coursier
 /.cups
 /.dbshell
 /.docker
@@ -26,15 +27,18 @@ pow_ruby_debug.rb
 /.dvm
 /.dvdcss
 /.exercism
+/.fastlane
 /.flexlmrc
 /.gem
 /Gemfile.lock
 /.gnupg
 /.gist-vim
+/.groovy
 /.guard_history
 /.heroku
 /.hex
 # For now....
+/.idea-build
 /.ipython
 /.irb_history
 /.ivy2
@@ -77,6 +81,7 @@ pow_ruby_debug.rb
 /.rustup
 /.sbt
 /.scala_history
+/.sdb_history
 /.ssh
 /.subversion
 /.tddium

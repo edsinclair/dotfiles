@@ -42,8 +42,7 @@ export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 # Sandbox managers
 
 export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/github/essessinc
-source /usr/local/bin/virtualenvwrapper.sh
+export PROJECT_HOME=$HOME/github/tallygo
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
