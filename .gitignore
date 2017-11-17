@@ -91,6 +91,7 @@ pow_ruby_debug.rb
 /.vim
 /.viminfo
 /.wget-hsts
+/.wunderground
 /.yarnrc
 /.zcompdump*
 /.zsh-update
