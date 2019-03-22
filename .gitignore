@@ -113,5 +113,5 @@ pow_ruby_debug.rb
 /VMware VMs/*
 /.virtualenvs
 /bin/BrowserStackLocal
-/github/*
+/github\.com/*
 /src/*

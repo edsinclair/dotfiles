@@ -45,3 +45,12 @@
 	protocol = ssh
 [diff]
 	compactionHeuristic = true
+[credential]
+	helper = cache --timeout=3600\n
+[url "git@github.com:tallygo/gatekeeper-go.git"]
+	insteadOf = https://github.com/tallygo/gatekeeper-go
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

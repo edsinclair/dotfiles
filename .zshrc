@@ -34,10 +34,17 @@ source /usr/local/opt/chruby/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
 source $ZSH/oh-my-zsh.sh
+export PGHOST=localhost
+export AUDIBLE_BYTES=030f8504
 
 # Customize to your needs...
 source /usr/local/share/zsh/site-functions/*
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
+
+# Go
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
 
 # Sandbox managers
 
@@ -46,3 +53,10 @@ export PROJECT_HOME=$HOME/github/tallygo
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
