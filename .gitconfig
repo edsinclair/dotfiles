@@ -24,7 +24,7 @@
 	name = Eirik Dentz Sinclair
 	email = eirikdentz@gmail.com
 [git-pair]
-	email = @tallygo.com
+	email = @befinvestments.com
 	authors = Eirik Dentz Sinclair <eirik@essess.com>
 [pager]
   color = true
@@ -54,3 +54,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[url "git@github.com:"]
+	insteadOf = https://github.com/

@@ -157,8 +157,8 @@ map <D-Z>       :later 1<CR>
 " ctags
 map <leader>c :!/usr/local/bin/ctags -R -f tags<CR>
 
-" Ag current word
-map <leader>a :Ag<CR>
+" Rg current word
+map <leader>a :Rg<CR>
 
 " Ack current word
 " map <leader>a :Ack<CR>
@@ -360,3 +360,7 @@ map \|          :NERDTreeFind<CR>
 "
 let g:ctrlp_arg_map   = 0
 let g:ctrlp_max_files = 30000
+let g:vim_jsx_pretty_disable_tsx = 1
+if executable('rg')
+  let g:ctrlp_user_command = 'rg %s --files --hidden --color=never --glob ""'
+endif
