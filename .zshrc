@@ -24,7 +24,7 @@ DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundler docker gem git github osx rails redis-cli ruby)
+plugins=(brew bundler docker gem git github history macos rails redis-cli ruby)
 
 # editor
 EDITOR=vim
@@ -47,11 +47,16 @@ export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 
 # Sandbox managers
+alias brew='env PATH="${PATH//$(pyenv root)/shims:/}" brew'
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/github/befinvestments
 eval "$(direnv hook zsh)"
-fpath=(/Users/eirik/.gem/ruby/2.7.1/gems/timetrap-1.15.2/completions/zsh $fpath)
+fpath=(/Users/eirik/.gem/ruby/3.1.2/gems/timetrap-1.15.2/completions/zsh $fpath)
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 # export SDKMAN_DIR="/Users/eirik/.sdkman"
@@ -59,3 +64,7 @@ fpath=(/Users/eirik/.gem/ruby/2.7.1/gems/timetrap-1.15.2/completions/zsh $fpath)
 
 # added by travis gem
 [ -f /Users/eirik/.travis/travis.sh ] && source /Users/eirik/.travis/travis.sh
+
+export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
+export PATH="/usr/local/opt/node@16/bin:$PATH"

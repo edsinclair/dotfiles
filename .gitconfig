@@ -23,14 +23,12 @@
 [user]
 	name = Eirik Dentz Sinclair
 	email = eirikdentz@gmail.com
-[git-pair]
-	email = @befinvestments.com
-	authors = Eirik Dentz Sinclair <eirik@essess.com>
 [pager]
   color = true
 [core]
 	editor = mvim --nofork
 	excludesfile = ~/.globalignore
+	ignorecase = false
 [color]
 	diff = auto
 	status = auto
@@ -56,3 +54,8 @@
 	required = true
 [url "git@github.com:"]
 	insteadOf = https://github.com/
+[init]
+	defaultBranch = main
+[git-pair]
+	authors = Eirik Dentz Sinclair <esinclair@arencibia.com>
+	email = @arencibia.com

@@ -93,6 +93,8 @@ set wildignore+=*.swp,*~,._*
 set backupdir^=~/.vim/_backup//    " where to put backup files.
 set directory^=~/.vim/_temp//      " where to put swap files.
 
+let g:python3_host_prog=$HOME.'/.pyenv/shims/python'
+
 execute pathogen#infect()
 runtime macros/matchit.vim
 
@@ -101,7 +103,7 @@ if has("autocmd")
   " In Makefiles, use real tabs, not tabs expanded to spaces
   au FileType make setlocal noexpandtab
 
-  " Make sure all mardown files have the correct filetype set and setup wrapping
+  " Make sure all markdown files have the correct filetype set and setup wrapping
   au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn,txt} setf markdown
 
   " make Python follow PEP8 for whitespace ( http://www.python.org/dev/peps/pep-0008/ )
@@ -362,5 +364,19 @@ let g:ctrlp_arg_map   = 0
 let g:ctrlp_max_files = 30000
 let g:vim_jsx_pretty_disable_tsx = 1
 if executable('rg')
-  let g:ctrlp_user_command = 'rg %s --files --hidden --color=never --glob ""'
+  let g:ctrlp_user_command = 'rg %s --files --hidden --color=never --glob "" --glob=!.git'
 endif
+
+let test#strategy = "dispatch"
+let test#ruby#rspec#options = {
+  \ 'nearest': '--backtrace',
+  \ 'file':    '--format progress',
+\}
+" Put these lines at the very end of your vimrc file.
+
+" Load all plugins now.
+" Plugins need to be added to runtimepath before helptags can be generated.
+packloadall
+" Load all of the helptags now, after plugins have been loaded.
+" All messages and errors will be ignored.
+silent! helptags ALL
