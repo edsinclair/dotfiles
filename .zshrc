@@ -30,25 +30,24 @@ plugins=(brew bundler docker gem git github history macos rails redis-cli ruby)
 EDITOR=vim
 
 # Version managers
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+source /opt/homebrew/share/chruby/auto.sh
+
+FPATH="$(/opt/homebrew/bin/brew --prefix)/share/zsh/site-functions:${FPATH}"
 
 source $ZSH/oh-my-zsh.sh
 export PGHOST=localhost
 export AUDIBLE_BYTES=030f8504
 
 # Customize to your needs...
-source /usr/local/share/zsh/site-functions/*
 export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # Go
 export GOPATH=$HOME/go
-export GOROOT=/usr/local/opt/go/libexec
+export GOROOT=/opt/homebrew/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 
 # Sandbox managers
-alias brew='env PATH="${PATH//$(pyenv root)/shims:/}" brew'
-
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
@@ -56,15 +55,14 @@ fi
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/github/befinvestments
 eval "$(direnv hook zsh)"
-fpath=(/Users/eirik/.gem/ruby/3.1.2/gems/timetrap-1.15.2/completions/zsh $fpath)
+fpath=(/Users/eirik/.gem/ruby/3.3.6/bundler/gems/timetrap-170929080e36/completions/zsh $fpath)
+
+
+export PATH="/opt/homebrew/opt/bison/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-# export SDKMAN_DIR="/Users/eirik/.sdkman"
-# [[ -s "/Users/eirik/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/eirik/.sdkman/bin/sdkman-init.sh"
-
-# added by travis gem
-[ -f /Users/eirik/.travis/travis.sh ] && source /Users/eirik/.travis/travis.sh
-
-export PATH="$HOME/.poetry/bin:$PATH"
-export PATH="/usr/local/opt/postgresql@15/bin:$PATH"
-export PATH="/usr/local/opt/node@16/bin:$PATH"
+export SDKMAN_DIR="/Users/eirik/.sdkman"
+[[ -s "/Users/eirik/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/eirik/.sdkman/bin/sdkman-init.sh"

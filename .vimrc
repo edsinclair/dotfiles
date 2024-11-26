@@ -367,6 +367,7 @@ if executable('rg')
   let g:ctrlp_user_command = 'rg %s --files --hidden --color=never --glob "" --glob=!.git'
 endif
 
+let g:ale_ruby_rubocop_executable = 'bundle'
 let test#strategy = "dispatch"
 let test#ruby#rspec#options = {
   \ 'nearest': '--backtrace',
